@@ -1,1 +1,24 @@
-Banana
+<!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Your Word</title>
+  </head>
+  <body>
+
+      <h1 id="word"></h1>
+
+      <script>
+          const words = [
+              "first word",
+              "second word",
+              "third word",
+              "fourth word"
+          ];
+
+          const randomIndex = Math.floor(Math.random() * words.length);
+          document.getElementById("word").innerText = words[randomIndex];
+      </script>
+
+  </body>
+  </html>
